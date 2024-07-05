@@ -21,7 +21,7 @@ script.Parent.OnServerEvent:Connect(function(plr)
 			explosion.Parent = ehe
 			explosion.Position = ehe.Position
 			explosion.BlastRadius = 20
-			explosion.BlastPressure = 10000
+			explosion.BlastPressure = 1000000000 --fix it if your want to use
           
 			--Damage
 			hit.Parent.Humanoid:TakeDamage(damage)
