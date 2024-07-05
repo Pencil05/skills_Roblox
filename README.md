@@ -1,5 +1,5 @@
 #Projectile skill in Roblox  \
-1.local script  \
+1.creat local script under your toolskill  \
 2.creat remote under local script  \
 3.creat script under remote  \
 4.make your effect skill and put it in ReplicateStorage  \
