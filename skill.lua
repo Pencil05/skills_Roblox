@@ -13,19 +13,10 @@ script.Parent.OnServerEvent:Connect(function(plr)
 	ehe.CFrame = Rootpart.CFrame*CFrame.new(0,0,-7)
 	
 	--hit damage
-  local damage = 20
+  	local damage = 20
 	ehe.Touched:Connect(function(hit)
-		if hit.Parent:FindFirstChild("Humanoid") and hit.Parent.Name ~= plr.Name then
-			--realbomb! (Too strong)
-			local explosion = Instance.new("Explosion")
-			explosion.Parent = ehe
-			explosion.Position = ehe.Position
-			explosion.BlastRadius = 20
-			explosion.BlastPressure = 1000000000 --fix it if your want to use
-          
-			--Damage
-			hit.Parent.Humanoid:TakeDamage(damage)
-		end	
+		--Damage
+		hit.Parent.Humanoid:TakeDamage(damage)
 	end)
 	
 	--shot
